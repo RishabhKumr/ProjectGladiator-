@@ -39,6 +39,7 @@
     text-decoration: none;  /*it will remove hyperlink(underline)*/
     letter-spacing: 1px;
     height: 70px;
+    
   }
 
   .topnav a:hover{
@@ -53,15 +54,16 @@ overflow:visible;
 
 
 .dropdown-content{
-  display: none;
+  display:none;
   position: absolute;
   background-color: burlywood;
   min-width: 50x;
   box-shadow: 0px 8px 16px 0px;
   z-index: -auto;
+  margin: 40px;
 }
 .dropdown:hover .dropdown-content{
-  display: block;
+  display:list-item;
 }
 
   /* Clear floats after the columns */
@@ -91,10 +93,6 @@ overflow:visible;
   
   }
   
-  .cc {
-    float: left;
-    padding: 5px;
-  }
    img {
     width: auto;
     max-width: 165px;
@@ -119,6 +117,9 @@ overflow:visible;
     
     
   }
+  .container a{
+    cursor: pointer;
+  }
   /* Set a style for all buttons */
   button {
     background-color:black;
@@ -141,6 +142,21 @@ overflow:visible;
     background-color: #f44336;
     float: left;
     margin: 0px 0px;
+  }
+
+  span.show{
+    right: 20px;
+    color:#111;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:sans-serif;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+  }
+
+  input:valid ~span.show{
+    visibility: visible;
   }
   /* The "Forgot password" text */
   span.psw {

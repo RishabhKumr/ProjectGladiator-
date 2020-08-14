@@ -1,4 +1,12 @@
-<div class="row">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
     <div class="main">
         <div class="card" style="height: 540px;">
             <h2 style="text-align:right;">Login to avail services!!</h2>
@@ -10,8 +18,8 @@
                     <input type="text" placeholder="Enter Username" id="uname" required ngModel><br>
                     
                     <label for="psw"><b>Password</b></label><br>
-                    <input type="password" placeholder="Enter Password" id="psw" required ngModel><br>
-
+                    <input class="pswrd" type="password" placeholder="Enter Password" id="psw" required ngModel><br>
+                    <span class="show">SHOW</span>
                     <button type="submit">Login</button><br>
                     <label>
                         <input type="checkbox" checked="checked" id="remember" required ngModel> Remember me
@@ -30,3 +38,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    var input=document.querySelector('.pswrd');
+    var show=document.querySelector('.show');
+    show.addEventListener('click',active);
+    function active(){
+        if(input.type === "password"){
+            input.type="text";
+            show.style.color="#1DA1F2";
+            show.textContent= "HIDE";
+        }
+        else{
+            input.type="password";
+            show.textContent= "SHOW";
+            show.style.color="#111";
+        }
+    }
+</script>
+</body>
+</html>
