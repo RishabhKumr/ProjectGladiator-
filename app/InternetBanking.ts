@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
          <h2 style="text-align:right;"> Register for internet banking</h2>
           
          <form #regForm='ngForm' style="float:right;">
-         <div class="container" >
+         <div class="container" style="text-align:center; border:2px solid black;
+         border-radius: 10px;">
            <label for="Account"><b>Account Number</b></label><br>
            <input type="tel" placeholder="Enter Account Number" name="Account" id="Account" required ngModel><br>
 
@@ -25,8 +26,8 @@ import { Component, OnInit } from '@angular/core';
            <label for="tpsw1"><b>Confirm Transaction Password</b></label><br>
            <input type="password" placeholder="Enter Password" id="tpsw1"><br>
 
-           <label for="otp"><b>Enter Otp</b></label><br>
-            <input type="tel" id="otp"><br>
+           <button style="border: none;cursor: pointer;width:37%;padding: 8px 0px;margin:10px 7px">send OTP</button><label for="otp"><b>Enter Otp</b></label><br>
+            <input type="tel" placeholder="Enter otp" id="otp"><br>
 
             <button type="submit">
             <a [routerLink]="['/loginLink']" class="prcd">Submit</a></button>
