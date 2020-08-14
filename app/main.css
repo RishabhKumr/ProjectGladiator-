@@ -40,12 +40,10 @@
     padding: 8px;
     text-decoration: none;  /*it will remove hyperlink(underline)*/
     letter-spacing: 1px;
-<<<<<<< HEAD
+
     height: 70px;
     
-=======
     height: 50px;
->>>>>>> b32f70e7a31b493b02c7895d14c7b8699aa7ec5e
   }
 
   .topnav a:hover{
@@ -65,12 +63,10 @@ overflow:visible;
   background-color: burlywood;
   min-width: 50x;
   box-shadow: 0px 8px 16px 0px;
-<<<<<<< HEAD
+
   z-index: -auto;
   margin: 40px;
-=======
   z-index: 4;
->>>>>>> b32f70e7a31b493b02c7895d14c7b8699aa7ec5e
 }
 .dropdown:hover .dropdown-content{
   display:list-item;

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
          <h2 style="text-align:right;"> Register for internet banking</h2>
           
          <form #regForm='ngForm' style="float:right;">
-         <div class="container" >
+         <div class="container" style="text-align:center; border:2px solid black;
+         border-radius: 10px;">
            <label for="Account"><b>Account Number</b></label><br>
            <input type="tel" placeholder="Enter Account Number" name="Account" id="Account" required ngModel><br>
 
