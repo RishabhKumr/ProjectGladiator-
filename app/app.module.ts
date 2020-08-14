@@ -12,6 +12,8 @@ import {FormsModule} from  "@angular/forms";
 import { ForgetPasswordComponent } from "./ForgetPassword";
 import { SetPasswordComponent} from "./setPaasword";
 import { InternetBankingComponent } from "./InternetBanking";
+import { SessionExpiredComponent } from './session-expired/session-expired.component';
+import { AccountStatementComponent } from './account-statement/account-statement.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { InternetBankingComponent } from "./InternetBanking";
     HomeComponent,
     ForgetPasswordComponent,
     SetPasswordComponent,
-    InternetBankingComponent
+    InternetBankingComponent,
+    SessionExpiredComponent,
+    AccountStatementComponent
   ],
   imports: [
     BrowserModule,

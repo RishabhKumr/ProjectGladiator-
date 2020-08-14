@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { ForgetPasswordComponent } from "./ForgetPassword";
 import { SetPasswordComponent } from "./setPaasword";
 import { InternetBankingComponent } from "./InternetBanking";
+import { SessionExpiredComponent } from './session-expired/session-expired.component';
+import { AccountStatementComponent } from './account-statement/account-statement.component';
 
 const routes: Routes = [
   {
@@ -28,9 +30,13 @@ path:'forgetpasswordLink',component:ForgetPasswordComponent
 },
 {
   path:'internetBankingLink',component:InternetBankingComponent
+},
+{
+  path:'sessionTimeout',component:SessionExpiredComponent
+},
+{
+  path:'accountStatement',component:AccountStatementComponent
 }
-
-
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
