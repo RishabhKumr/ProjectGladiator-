@@ -57,6 +57,7 @@ overflow:visible;
 } */
 
 
+/* style for the dropdownlist in navbar*/
 .dropdown-content{
   display:none;
   position: absolute;
@@ -87,8 +88,8 @@ overflow:visible;
   /* Add a card effect for articles */
   .card {
     background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+    /* padding: 20px; */
+    margin-top: 0px; 
   overflow:hidden;
   margin: auto;
   background-image: url('src\assets\img.png');
@@ -113,14 +114,15 @@ overflow:visible;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius:10px;
   }
   /* Add padding to containers */
   .container {
     padding: 16px;
-    width: 320px;
+    width: 350px;
     margin: auto;
     height: auto;
-    
+    border-radius:10px;
     
   }
   .container a{
@@ -132,8 +134,9 @@ overflow:visible;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
-    cursor: pointer;
+    border-radius:10px;
+  border:thin;
+  cursor: pointer;
     width: 80%;
   }
    /* Add a hover effect for buttons */
@@ -147,23 +150,55 @@ overflow:visible;
     padding: 10px 10px;
     background-color: #f44336;
     float: left;
-    margin: 0px 0px;
+    margin: -10px 0px;
+    border-radius:10px;
+  border:thin;
+  cursor: pointer;
   }
 
+
+  /*  style for send otp button*/
+button.otp{
+  border-radius:50px;
+  border:thin;
+  cursor: pointer;
+  width:37%;
+  padding: 8px 0px;
+  margin:10px 7px;  
+}
+  /* style for show and hide of password*/
   span.show{
-    right: 20px;
+    right: 0px;
     color:#111;
     font-size: 14px;
     font-weight: bold;
     font-family:sans-serif;
     cursor: pointer;
-    user-select: none;
+    user-select: none;;
     visibility: hidden;
   }
 
   input:valid ~span.show{
     visibility: visible;
   }
+
+  /* style for show and hide of password*/
+
+  span.view{
+    right: 0px;
+    color:#111;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:sans-serif;
+    cursor: pointer;
+    user-select: none;;
+    visibility: hidden;
+  }
+
+  input:valid ~span.view{
+    visibility: visible;
+  }
+  
   /* The "Forgot password" text */
   span.psw {
     float: right;
@@ -183,7 +218,10 @@ overflow:visible;
     float: left;
     width: auto;
     padding: 10px 10px;
-    margin: 0px 5px;
+    margin: -10px 5px;
+    border-radius:10px;
+  border:thin;
+  cursor: pointer;
   }
   
 .prcd{

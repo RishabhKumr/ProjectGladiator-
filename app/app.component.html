@@ -20,7 +20,14 @@
           <li><a [routerLink]="['/internetBankingLink']">Internet Banking</a></li>
           </div>
           </div>
-          <li><a [routerLink]="['/loginLink']">Login</a></li>
+          <div class="dropdown">
+            <a href="">Login</a>
+            <div class="dropdown-content">
+              <li><a [routerLink]="['/loginLink']">Customer Login</a></li>          
+              <li><a [routerLink]="['/AdminLoginLink']">Admin Login</a></li>
+          </div>
+          </div>
+          
           <li><a [routerLink]="['/accountStatement']">Ministatement</a></li>
           <li><a [routerLink]="['/sessionTimeout']">SessionTimeOut</a></li>
       </ul>

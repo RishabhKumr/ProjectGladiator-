@@ -8,6 +8,9 @@ import { SetPasswordComponent } from "./setPaasword";
 import { InternetBankingComponent } from "./InternetBanking";
 import { SessionExpiredComponent } from './session-expired/session-expired.component';
 import { AccountStatementComponent } from './account-statement/account-statement.component';
+import {  ForgetUserIdComponent} from "./ForgetUserId";
+import { ChangePasswordComponent } from "./change-password/change-password.component";
+import { AdminLoginComponent } from "./admin-login/admin-login.component";
 
 const routes: Routes = [
   {
@@ -26,6 +29,9 @@ const routes: Routes = [
 path:'forgetpasswordLink',component:ForgetPasswordComponent
 },
 {
+path:'forgetUserIdLink' , component:ForgetUserIdComponent
+},
+{
   path:'setPaaswordLink',component:SetPasswordComponent
 },
 {
@@ -36,7 +42,14 @@ path:'forgetpasswordLink',component:ForgetPasswordComponent
 },
 {
   path:'accountStatement',component:AccountStatementComponent
+},
+{
+  path:"changePasswordLink",component:ChangePasswordComponent
+},
+{
+  path:"AdminLoginLink" ,component:AdminLoginComponent
 }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="card">
          <h2 style="text-align:right;"> Register for internet banking</h2>
           
-         <form #regForm='ngForm' style="float:right;">
+         <form #internetregForm='ngForm' style="float:right;">
          <div class="container" style="text-align:center; border:2px solid black;
          border-radius: 10px;">
            <label for="Account"><b>Account Number</b></label><br>
@@ -29,7 +29,7 @@ import { Component, OnInit } from '@angular/core';
            <button style="border: none;cursor: pointer;width:37%;padding: 8px 0px;margin:10px 7px">send OTP</button><label for="otp"><b>Enter Otp</b></label><br>
             <input type="tel" placeholder="Enter otp" id="otp"><br>
 
-            <button type="submit">
+            <button type="submit" [disabled]="!internetregForm.valid">
             <a [routerLink]="['/loginLink']" class="prcd">Submit</a></button>
             </div>
             </form>       

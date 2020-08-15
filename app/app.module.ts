@@ -14,6 +14,9 @@ import { SetPasswordComponent} from "./setPaasword";
 import { InternetBankingComponent } from "./InternetBanking";
 import { SessionExpiredComponent } from './session-expired/session-expired.component';
 import { AccountStatementComponent } from './account-statement/account-statement.component';
+import {  ForgetUserIdComponent} from "./ForgetUserId";
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +25,13 @@ import { AccountStatementComponent } from './account-statement/account-statement
     RegisterComponent,
     HomeComponent,
     ForgetPasswordComponent,
+    ForgetUserIdComponent,
     SetPasswordComponent,
     InternetBankingComponent,
     SessionExpiredComponent,
-    AccountStatementComponent
+    AccountStatementComponent,
+    ChangePasswordComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
