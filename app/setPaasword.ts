@@ -54,9 +54,9 @@ export class SetPasswordComponent implements OnInit {
           show.textContent= "HIDE";
       }
       else{
-          input.type="password";
-          show.textContent= "SHOW";
-          show.style.color="#111";
+        input.type="password";
+        show.textContent= "SHOW";
+        show.style.color="#111";
       }
   }
   var input1=document.querySelector('.pswrd1');
@@ -64,14 +64,14 @@ export class SetPasswordComponent implements OnInit {
   show1.addEventListener('click',active1);
   function active1(){
       if(input1.type === "password"){
-          input1.type="text";
-          show1.style.color="#1DA1F2";
-          show1.textContent= "HIDE";
+        input1.type="text";
+        show1.style.color="#1DA1F2";
+        show1.textContent= "HIDE";
       }
       else{
-          input1.type="password";
-          show1.textContent= "SHOW";
-          show1.style.color="#111";
+        input1.type="password";
+        show1.textContent= "SHOW";
+        show1.style.color="#111";
       }
   }
     }

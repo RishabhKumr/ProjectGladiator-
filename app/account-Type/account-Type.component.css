@@ -1,3 +1,8 @@
+
+.AccountCatagoryTable{
+    height: 500px;
+}
+
 .pricingTable {
     margin: 40px auto;
 }
@@ -8,6 +13,7 @@
     font-size: 300%;
     margin-bottom: 20px;
     letter-spacing: 0.04em;
+   
 }
 .pricingTable > .pricingTable-subtitle {
     text-align: center;
@@ -15,6 +21,7 @@
     font-size: 1.8em;
     letter-spacing: 0.04em;
     margin-bottom: 60px;
+   
 }
 @media screen and (max-width: 480px) {
     .pricingTable > .pricingTable-subtitle {
@@ -26,6 +33,8 @@
     padding-left: 2em;
     padding-right: 2em;
     text-align: center;
+    overflow: hidden;
+    margin:10px;
 }
 .pricingTable-firstTable_table {
     vertical-align: middle;

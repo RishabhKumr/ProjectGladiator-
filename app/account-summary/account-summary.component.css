@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: OpenSans-Regular;
-    src: url('src\assets\OpenSans-Regular.ttf'); 
+    src: url('src/assets/OpenSans-Regular.ttf'); 
   }
   
   
@@ -98,7 +98,7 @@
   [ Table ]*/
   
   .limiter {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
   

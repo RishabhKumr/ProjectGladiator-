@@ -40,7 +40,7 @@ export class ChangePasswordComponent implements OnInit {
     }
     
     function active1(){
-        if(input2.type === "password"){
+        if( input2.type === "password"){
             input2.type="text";
             show2.style.color="#1DA1F2";
             show2.textContent= "HIDE";
@@ -54,20 +54,20 @@ export class ChangePasswordComponent implements OnInit {
 
     
     function active2(){
-        if(input3.type === "password"){
+        if( input3.type === "password"){
             input3.type="text";
             show3.style.color="#1DA1F2";
             show3.textContent= "HIDE";
         }
         else{
-            input3.type="password";
+           input3.type="password";
             show3.textContent= "SHOW";
             show3.style.color="#111";
         }
     }
    
     function active3(){
-        if(input4.type === "password"){
+        if( input4.type === "password"){
             input4.type="text";
             show4.style.color="#1DA1F2";
             show4.textContent= "HIDE";

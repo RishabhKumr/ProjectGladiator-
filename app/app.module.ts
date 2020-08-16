@@ -34,7 +34,8 @@ import { AccountSummaryComponent } from "./account-summary/account-summary.compo
     AccountStatementComponent,
     ChangePasswordComponent,
     AdminLoginComponent,
-    AccountTypeComponent
+    AccountTypeComponent,
+    AccountSummaryComponent
   ],
   imports: [
     BrowserModule,
