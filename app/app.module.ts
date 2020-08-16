@@ -13,10 +13,12 @@ import { ForgetPasswordComponent } from "./ForgetPassword";
 import { SetPasswordComponent} from "./setPaasword";
 import { InternetBankingComponent } from "./InternetBanking";
 import { SessionExpiredComponent } from './session-expired/session-expired.component';
-import { AccountStatementComponent } from './account-statement/account-statement.component';
 import {  ForgetUserIdComponent} from "./ForgetUserId";
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import {AccountTypeComponent  } from "./account-Type/account-type.component";
+import {AccountStatementComponent  } from "./account-statement/account-statement.component";
+import { AccountSummaryComponent } from "./account-summary/account-summary.component";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     SessionExpiredComponent,
     AccountStatementComponent,
     ChangePasswordComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AccountTypeComponent
   ],
   imports: [
     BrowserModule,

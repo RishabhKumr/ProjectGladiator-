@@ -11,6 +11,9 @@ import { AccountStatementComponent } from './account-statement/account-statement
 import {  ForgetUserIdComponent} from "./ForgetUserId";
 import { ChangePasswordComponent } from "./change-password/change-password.component";
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
+import {AccountTypeComponent  } from "./account-Type/account-type.component";
+import { AccountSummaryComponent } from "./account-summary/account-summary.component";
+
 
 const routes: Routes = [
   {
@@ -48,6 +51,12 @@ path:'forgetUserIdLink' , component:ForgetUserIdComponent
 },
 {
   path:"AdminLoginLink" ,component:AdminLoginComponent
+},
+{
+  path:'AccountTypeLink',component:AccountTypeComponent
+},
+{
+  path:'AccountSummaryLink',component:AccountSummaryComponent
 }
 
 ];
